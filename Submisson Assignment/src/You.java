@@ -1,6 +1,6 @@
 /**
  * 
- * @author //Put your first and last name here
+ * @author Ryan Forgosh
  * 
  * 
  * Assignment Instructions:
@@ -18,13 +18,39 @@
  *  - Add achiu-frhsd as a collaborator
  *
  */
-public class You{
+public class You
+{
 
 	private String firstName;
 	private String lastName;
 	private String favoriteAnimal;
 	private int age;
 
-	// Write your code here
+	You()
+	{
+		firstName = ("Ryan");
+		lastName = ("Forgosh");
+		favoriteAnimal = ("Pug");
+		age = 15;
+	}
+	
+	String getFullName()
+	{
+		String fullName = new String(firstName + " " + lastName);
+		return fullName;
+	}
+	
+	String getFavoriteAnimal(String animal)
+	{
+		favoriteAnimal = animal;
+		return favoriteAnimal;
+	}
+	
+	int happyBirthday()
+	{
+		age++;
+		System.out.print("Happy Birthday! Today, you are ");
+		return age;
+	}
 	
 }
